@@ -15,6 +15,7 @@ return new class extends Migration
             //
             $table->string('phone')->nullable();
             $table->string('role')->default('user');
+            $table->string('cuti')->nullable();
         });
     }
 
@@ -27,6 +28,7 @@ return new class extends Migration
             //
             $table->dropColumn('phone');
             $table->dropColumn('role');
+            $table->dropColumn('cuti');
         });
     }
 };
